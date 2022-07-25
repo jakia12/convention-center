@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:ital,wght@0,300;0,600;0,700;1,500&family=Raleway:ital,wght@0,300;0,400;0,500;0,700;0,800;1,500&display=swap');
+
+/*===================================
+==============variables
+====================================*/
+
+:root {
+    --dark-gray: #3E3E3E;
+    --light-blue: #3F87F5;
+    --light-gray-overlay: #11111173;
+    --white: #fff;
+    --navy-dark: #231D4F;
+    --purple-light: #5243C2;
+    --shady-gray: #efefef;
+    --light-pink: #ff6b8136;
+    --border-light: #ddddddc2;
+    --clay-black: #747474;
+    --gray-para: #6C6C6C;
+    --light-shade: #f7f7f7;
+
+}
+
+
+/*===================================
+=============Global styles
+====================================*/
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+    margin: 0
+}
+
+ul li {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Raleway", sans-serif
+}
+
+p {
+    line-height: 1.7rem;
+    color: var(--gray-para)
+}
+
+p,
+a,
+span {
+    font-family: "Poppins", sans-serif
+}
+
+.clearfix {
+    padding: 80px 0;
+}
+
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/*===================================
+=============header nav
+====================================*/
+.navbar {
+    padding: 1.2rem 4.5rem 1.2rem 3.5rem;
+}
+
+ul.navbar-nav {
+    margin-right: 0 !important;
+    text-align: center;
+}
+
+.canvas-btn {
+    border: 2px solid #ddd;
+}
+
+a.navbar-brand {
+    font-size: 1.4rem;
+    font-weight: 700;
+    font-style: italic;
+    line-height: 1.6rem;
+}
+
+a.nav-link {
+    text-transform: capitalize;
+    font-size: 1rem;
+    margin-right: 1rem;
+    color: var(--dark-gray);
+
+}
+
+.active:hover,
+.active:focus {
+    color: var(--light-blue) !important
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: var(--light-blue)
+}
+
+/*===================================
+=============carousel
+====================================*/
+.carousel {
+
+    position: relative !important;
+    z-index: 2
+}
+
+.carousel-caption {
+    z-index: 2;
+    margin-bottom: 32px;
+}
+
+.carousel-caption h2 {
+    font-size: 3rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    line-height: 3rem;
+    margin-bottom: 15px;
+    padding: 0 7rem;
+}
+
+.carousel-item {
+    min-height: 550px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.carousel-caption p {
+    padding: 0 13rem;
+    font-size: 0.95rem;
+}
+
+a.book-btn {
+    color: var(--light-blue);
+    background: var(--white);
+    padding: 0.6rem 2.5rem;
+    font-size: 1rem;
+    text-transform: capitalize;
+    margin-top: 0.65rem;
+    border: 2px solid var(--white);
+}
+
+.book-btn:hover,
+.book-btn:focus {
+    background-color: transparent !important;
+
+    color: var(--white) !important;
+}
+
+.carousel::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: var(--light-gray-overlay);
+    top: 0;
+    left: 0;
+    bottom: 0;
+
+}
+
+
+
+/*===================================
+=============about section
+====================================*/
+
+.about_text_area h2 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 3.5rem;
+}
+
+.explore_btn {
+    font-size: 1rem;
+    text-transform: capitalize;
+    background: var(--light-blue) !important;
+    color: var(--white) !important;
+    margin-top: 0.7rem;
+    padding: 0.6rem 1.75rem;
+    text-decoration: none;
+}
+
+.explore_btn:hover .arrow-right {
+    margin-right: 10px !important;
+}
+
+.arrow_right {
+    margin-left: 7px;
+    margin-top: 2px;
+    transform: translate(0);
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+}
+
+/*===================================
+=============packages section
+====================================*/
+section.package_section {
+    background: #3f87f50f;
+}
+
+h2.section_title.text-center {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-bottom: 5rem;
+}
+
+.package_info {
+    transition: all 0.15s ease-in-out;
+    padding: 1.7rem;
+    border-radius: 6px;
+    border: 1px solid var(--border-light)
+}
+
+
+.package_info:hover {
+    background: var(--light-blue)
+}
+
+.package_price {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 2.5rem;
+    color: var(--navy-dark);
+}
+
+span.package_name {
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    font-weight: 600;
+    line-height: 1.8rem;
+    margin-top: 16px;
+    display: block;
+    color: var(--navy-dark)
+}
+
+ul.package_features {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.8rem;
+}
+
+ul.package_features li {
+    list-style: none;
+    margin-bottom: 0.5rem;
+    /* margin-left: 0.2rem; */
+}
+
+.fa-check {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    color: var(--purple-light);
+    font-size: 15px;
+    background: var(--shady-gray);
+    border-radius: 50%;
+    margin-right: 0.7rem;
+}
+
+.package_info:hover .package_price,
+.package_info:hover p.package_subtitle,
+.package_info:hover ul.package_features li,
+.package_info:hover span.package_name {
+    color: var(--white)
+}
+
+p.package_subtitle {
+    font-size: 0.95rem;
+    margin-top: 0.7rem;
+}
+
+a.chose-btn {
+    background: var(--light-pink);
+    color: var(--light-blue);
+    padding: 0.6rem 3rem;
+    border-radius: 30px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-top: 0.5rem;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.15s ease-in-out;
+}
+
+.package_info:hover a.chose-btn {
+    background: var(--white);
+    color: var(--light-blue)
+}
+
+
+
+
+/*===================================
+============Testimonial section
+====================================*/
+.testimonial_box {
+    text-align: center;
+    padding: 1.8rem 2.2rem;
+    margin: 0.5rem;
+}
+
+.client_img {
+    width: 109px;
+
+}
+
+span.client_name {
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.7rem;
+    display: block;
+    text-transform: uppercase;
+    margin-top: 0.7rem;
+    color: var(--navy-dark)
+}
+
+span.client_designation {
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 1.5rem;
+    color: var(--clay-black)
+}
+
+/*===================================
+=============Faq section
+====================================*/
+section.faq_section {
+    background: var(--light-shade);
+}
+
+button.accordion-button {
+    font-weight: 600;
+    line-height: 1.5rem;
+
+}
+
+button.accordion-button:focus,
+button.collapsed:focus {
+    background-color: none !important;
+    border: none !important;
+    outline: none !important;
+    color: var(--navy-dark)
+}
+
+/*===================================
+=============about section
+====================================*/

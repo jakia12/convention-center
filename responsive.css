@@ -1,0 +1,91 @@
+@media screen and (max-width:992px) {
+    .carousel-caption {
+
+        margin-bottom: 20px;
+    }
+
+    .carousel-caption h2 {
+        font-size: 2.5rem;
+
+        margin-bottom: 12px;
+        padding: 0
+    }
+
+    .carousel-caption p {
+        padding: 0 4rem;
+        font-size: 0.95rem;
+    }
+}
+
+@media screen and (max-width:768px) {
+
+    /******navbar**********/
+    .navbar {
+        padding: 1.2rem 1rem 1.2rem 1rem;
+    }
+
+
+    /*******carousel*******/
+    .carousel-item {
+        min-height: 450px;
+    }
+
+    .offcanvas-body>.collapse {
+        display: block !important;
+    }
+
+    .carousel-caption {
+
+        margin-bottom: 20px;
+    }
+
+    .carousel-caption h2 {
+        font-size: 2.2rem;
+        line-height: 2.4rem;
+
+        margin-bottom: 12px;
+        padding: 0
+    }
+
+    .carousel-caption p {
+        padding: 0 2rem;
+        font-size: 0.95rem;
+        line-height: 1.7rem;
+    }
+
+    /*******about section*******/
+    .flex-direction-sm {
+        flex-direction: column-reverse;
+    }
+
+    .about_text_area {
+        margin-bottom: 1.5rem;
+    }
+}
+
+
+@media screen and (max-width:480px) {
+
+    a.navbar-brand {
+        font-size: 1rem;
+
+    }
+
+    .canvas-btn {
+        background: transparent;
+        color: #111 !important;
+        border: none !important;
+        font-size: 1.2rem;
+    }
+
+    .carousel-caption h2 {
+        font-size: 1.7rem;
+        line-height: 2rem;
+
+    }
+
+    .carousel-caption p {
+        padding: 0 0.5rem;
+
+    }
+}
