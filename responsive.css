@@ -19,6 +19,11 @@
 
 @media screen and (max-width:768px) {
 
+    /*******************/
+    .clearfix {
+        padding: 2.2rem 0;
+    }
+
     /******navbar**********/
     .navbar {
         padding: 1.2rem 1rem 1.2rem 1rem;
@@ -60,6 +65,21 @@
 
     .about_text_area {
         margin-bottom: 1.5rem;
+    }
+
+    /*********footer*********/
+    .footer_text {
+        justify-content: center;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    span.copyright {
+        margin-top: 1.5rem;
+    }
+
+    .footer_btn_group {
+        margin: 0 auto;
     }
 }
 

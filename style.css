@@ -17,6 +17,8 @@
     --clay-black: #747474;
     --gray-para: #6C6C6C;
     --light-shade: #f7f7f7;
+    --dark-btn: #010101;
+    --shady-border: #dddddd7a;
 
 }
 
@@ -61,7 +63,7 @@ span {
 }
 
 .clearfix {
-    padding: 80px 0;
+    padding: 4rem 0;
 }
 
 .clearfix::after {
@@ -144,6 +146,7 @@ a.nav-link {
 .carousel-caption p {
     padding: 0 13rem;
     font-size: 0.95rem;
+    color: var(--light-shade);
 }
 
 a.book-btn {
@@ -369,5 +372,35 @@ button.collapsed:focus {
 }
 
 /*===================================
-=============about section
+=============footer section
 ====================================*/
+.footer {
+    padding: 2.8rem 0;
+    background-color: var(--dark-gray);
+}
+
+.footer_text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+span.copyright {
+    color: var(--light-shade);
+    font-size: 1rem;
+}
+
+.btn_title {
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    color: var(--light-shade);
+    margin-bottom: 1rem;
+}
+
+img.download_btn {
+    border-radius: 5px;
+    border: 1px solid var(--shady-border);
+    display: block;
+    margin-top: 0.6rem;
+}
